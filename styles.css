@@ -186,88 +186,20 @@ nav ul li{
     border: 3px solid green;
     padding: 10px;
     font-size: large;
-    font-family: sans-serif;
+    font-family: sans-serif;  
     }   
-.AddNewSubject {
-    display: inline-block;
-    position: left;
-    vertical-align: top;
-    width: 33%;
-  }
-.EditSubject {
-    display: inline-block;
-    position: top;
-    vertical-align: top;
-    width: 33%;
-  }
-
-.DeleteSubject {
-    display: inline-block;
-    position: right;
-    vertical-align: top;
-    width: 33%;
-  }
-
-.DeAssignSubjectDevelopment{
-    display: inline-block;
-    vertical-align: middle;
-    width: 33%;
-}
-.AssignInstance{
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-}
-.DeleteAcademic{
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-}
-.AvailableAcademics{
-    position: bottom;
-    display: inline-block;
-    vertical-align: top;
-    width: 33%; 
-}
-.AddNewAcademic {
-    position: bottom;
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-}  
-.EditAcademic {
-    position: bottom;
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-}
-.AddNewInstance {
-    display: inline-block;
-    vertical-align: top;
-    width: 33%
-}
-.EditInstance{
-    display: inline-block;
-    vertical-align: top;
-    width: 33%
-}
-.ViewInstance{
-    display: inline-block;
-    position: absolute;
-    vertical-align: top;
-    padding-bottom: 10%;
-    width: 33%
-}
-.DeleteInstance{
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    padding-top: 10%;
-    width: 33%
-} 
-.Schedule{
-    margin: auto;
-    width: 33.33; 
-}
+.flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+      }
+      .flex-container > div {
+        width: 450px;
+        margin: 10px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 15px;  
+      }
 
  /* End of Web Page CSS*//* Credit to Jayden */
