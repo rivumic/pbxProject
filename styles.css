@@ -185,6 +185,8 @@ nav ul li{
     width: 75%;
     border: 3px solid green;
     padding: 10px;
+    font-size: large;
+    font-family: sans-serif;
     }   
 .AddNewSubject {
     display: inline-block;
@@ -267,10 +269,5 @@ nav ul li{
     margin: auto;
     width: 33.33; 
 }
- .header{
-    margin: auto;
-
- }
-
 
  /* End of Web Page CSS*//* Credit to Jayden */
