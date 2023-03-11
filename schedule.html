@@ -3,20 +3,110 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Schedule</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="academics.html">Academic</a></li> 
-        <li><a href="instances.html">Instances</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="subjects.html">Subjects</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <h1>Didasko Instance Schedule</h1>
+        <nav>
+            <ul>
+                <li><a href="academics.html">Academic</a></li> 
+            <li><a href="instances.html">Instances</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            </ul>
+        </nav>
+        <div class="headerimg">
+            <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
+             alt="Latrobe logo" class="latrobeLogo">
+          </div>
+        </div>
     <div class="Container">
-    <div class="Schedule Display">
-
+    <div class="ScheduleDisplay">
+        <div class="Schedule">
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>
+            </li>
+            </ul>
+            </nav>
+            </div>
+            <select name="year">
+             <option> 2021 </option>
+             <option> 2022 </option>
+             <option> 2023 </option>   
+            </select>
+            <table>
+                
+                <tr>
+                    <th></th>
+                    <th>Jan</th>
+                    <th>Feb</th>
+                    <th>Mar</th>
+                    <th>Apr</th>
+                    <th>May</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Aug</th>
+                    <th>Sep</th>
+                    <th>Oct</th>
+                    <th>Nov</th>
+                    <th>Dec</th>
+                </tr>
+                <tr>
+                    <th>CSEBGX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3CIX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3NWX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3OTX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3WSX</th>   
+                </tr>
+                <tr>
+                    <th>CSEPAX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3PBX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3PEX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3ACX</th>   
+                </tr>
+                <tr>
+                    <th>CES3SOX</th>   
+                </tr>
+                <tr>
+                    <th>CSE3BDX</th>   
+                </tr>
+                <tr>
+                    <th>CES3PCX</th>   
+                </tr>
+                <tr>
+                    <th>CES3CAX</th>   
+                </tr>
+                <tr>
+                    <th>CES3CBX</th>   
+                </tr>
+            </table>
     </div>
     </div>
 </body>

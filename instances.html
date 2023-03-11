@@ -3,20 +3,126 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Instance</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Instances</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="academics.html">Academic</a></li> 
-        <li><a href="instances.html">Instances</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="subjects.html">Subjects</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <h1>Didasko Instance Schedule</h1>
+        <nav>
+            <ul>
+                <li><a href="academics.html">Academic</a></li> 
+            <li><a href="instances.html">Instances</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            </ul>
+        </nav>
+        <div class="headerimg">
+            <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
+             alt="Latrobe logo" class="latrobeLogo">
+          </div>
+        </div>
     <div class="Container">
-    <div class="Instance Display">
-
+    <div class="InstanceDisplay">
+        <div class="AddNewInstance">
+            <p>Add New Instance</p>
+            <form class="contact-form" action="Reponse.html" method="post">
+                <p> Instance Name</p>
+                <input type="text" name="mail" placeholder="Instance Name">
+                <p>Subject</p>
+                <select name="Subject">
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    </select>
+                    <p>Year</p>
+                    <select name="Year">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        </select>
+                        <p>Month</p>
+                        <select name="Month">
+                            <option> 1 </option>
+                            <option> 2 </option>
+                            <option> 3 </option>
+                            </select>
+                            <p>Student Enrolments</p>
+                            <input type="text" name="mail" placeholder="Student Enrolments">
+                <button type="submit" name="Submit">Save</button>
+         </div>   
+         <div class="EditInstance">
+            <p>Edit Instance</p>
+            <form class="contact-form" action="Reponse.html" method="post">
+                <p>Choose Instance</p>
+                <select name="Choose Instance">
+                    <option> IT Fundamentals </option>
+                    <option> Internet Client Engineering </option>
+                    <option> Industry Project 3B </option>
+                    </select>
+                <p> Instance Name</p>
+                <input type="text" name="mail" placeholder="Instance Name">
+                <p>Subject</p>
+                <select name="Subject">
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    </select>
+                    <p>Year</p>
+                    <select name="Year">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        </select>
+                        <p>Month</p>
+                        <select name="Month">
+                            <option> 1 </option>
+                            <option> 2 </option>
+                            <option> 3 </option>
+                            </select>
+                            <p>Student Enrolments</p>
+                            <input type="text" name="mail" placeholder="Student Enrolments">
+                <button type="submit" name="Submit">Save</button>
+         </div>
+         <div class="ViewInstance">
+            <p>View Instance Allocation</p>
+            <form class="contact-form" action="Reponse.html" method="post">
+                <select name="Academic">
+                    <option> Ben Arther </option>
+                    <option> Ted Moseby </option>
+                    <option> Jessica Lange </option>
+                    </select>
+                    <select name="Year">
+                    <option> 2021 </option>
+                    <option> 2022 </option>
+                    <option> 2023 </option>
+                    </select>
+                    <select name="Month">
+                    <option> January </option>
+                    <option> February </option>
+                    <option> March </option>
+                    <option> April </option>
+                    <option> May </option>
+                    <option> June </option>
+                    <option> July </option>
+                    <option> August </option>
+                    <option> September </option>
+                    <option> October </option>
+                    <option> November </option>
+                    <option> December </option>
+                    </select>
+                <button type="submit" name="Submit">Delete</button>
+         </div>  
+         <div class="DeleteInstance">
+            <p>Delete Instance</p>
+            <form class="contact-form" action="Reponse.html" method="post">
+                <select name="Instance">
+                    <option>CSE1ITX_2020_January</option>
+                    <option> CSE2ICX_2021_August </option>
+                    <option> CSE3PBX_2023_February  </option>
+                    </select>
+                <button type="submit" name="Submit">Delete</button>
+         </div>  
     </div>
     </div>
 </body>

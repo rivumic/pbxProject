@@ -3,19 +3,68 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Subject</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="academics.html">Academic</a></li> 
+    <div class="header">
+        <h1>Didasko Instance Schedule</h1>
+        <nav>
+            <ul>
+                <li><a href="academics.html">Academic</a></li> 
             <li><a href="instances.html">Instances</a></li>
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="subjects.html">Subjects</a></li>
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+        <div class="headerimg">
+            <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
+             alt="Latrobe logo" class="latrobeLogo">
+          </div>
+        </div>
     <div class="Container">
-    <div class="Subjects Display">
+    <div class="SubjectsDisplay">
+     <div class="AddNewSubject">
+        <p>Add New Subject</p>
+        <form class="contact-form" action="Reponse.html" method="post">
+            <p>Subject Name</p>
+            <input type="text" name="Subject">
+            <p>Year Level</p>
+            <select name="year">
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                </select>
+            <button type="submit" name="Submit">Add</button>
+     </div>   
+     <div class="EditSubject">
+        <p>Edit Subject</p>
+        <form class="contact-form" action="Reponse.html" method="post">
+            <select name="Subject">
+                <option> IT Fundamentals </option>
+                <option> Internet Client Engineering </option>
+                <option> Industry Project 3B </option>
+                </select>
+            <p> New Subject Name</p>
+            <input type="text" name="mail" placeholder="New Subject Name">
+            <p>Year Level</p>
+            <select name="year">
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                </select>
+            <button type="submit" name="Submit">Save</button>
+     </div>
+     <div class="DeleteSubject">
+        <p>Delete Subject</p>
+        <form class="contact-form" action="Reponse.html" method="post">
+            <select name="Subject">
+                <option> IT Fundamentals </option>
+                <option> Internet Client Engineering </option>
+                <option> Industry Project 3B </option>
+                </select>
+            <button type="submit" name="Submit">Delete</button>
+     </div>
 
     </div>
     </div>

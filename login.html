@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" >
 <head>
-    <meta charset="utf-8" />
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+<link rel="stylesheet" href="./styles.css">
+
 </head>
 
-<body>
+<body id="loginPage">
 
+    <div class="loginBox">
+        <h2>Log In</h2>
+        <br>
+        <br>
+        <br>
+        <label> <b>Choose User Type </b></label> 
+        <select>
+            <option value="First">Academic</option>
+            <option value="Second">Manager</option>
+            <option value="Third">Admin</option>
+          </select>
+          <br>
+          <br>
+          <label for="password"><b>Password</b></label>
+        <input type="password" name="password" placeholder="Enter Password...">
+        <button class="loginBtnn"><a href="#">Login</a></button>
 
-</div>
-</div>
+        <div class="imgcontainerlogo">
+            <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
+             alt="Latrobe logo" class="latrobeLogo">
+          </div>
+      </div>
 </body>
 <footer>
     <p>Copyright 2023 - Didasko</p>   

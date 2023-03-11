@@ -3,20 +3,287 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Academic</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Academics</title>
 </head>
-<nav>
-    <ul>
-        <li><a href="academics.html">Academic</a></li> 
+<div class="header">
+    <h1>Didasko Instance Schedule</h1>
+    <nav>
+        <ul>
+            <li><a href="academics.html">Academic</a></li> 
         <li><a href="instances.html">Instances</a></li>
         <li><a href="schedule.html">Schedule</a></li>
         <li><a href="subjects.html">Subjects</a></li>
-    </ul>
-</nav>
-<body>
+        </ul>
+    </nav>
+    <div class="headerimg">
+        <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
+         alt="Latrobe logo" class="latrobeLogo">
+      </div>
+    </div>
 <div class="Container">  
-<div class="Academic Display">
-
+<div class="AcademicDisplay">
+    <div class="DeAssignSubjectDevelopment">
+    <p>De/Assign Subject Development</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Choose Academic</p>
+        <select name="Choose Academi">
+            <option> 1 </option>
+            <option> 2 </option>
+            <option> 3 </option>
+            </select>
+        <p>Choose Subject</p>
+        <p> Year 1</p>
+        <input checked="checked" id="tab1" type="radio" name="pct"/>
+        <input id="tab2" type="radio" name="pct"/>
+        <input id="tab3" type="radio" name="pct"/>
+        <nav>
+        <ul>
+        <li class="tab1">
+        <label for="tab1">Level 1</label>
+        </li>
+        <li class="tab2">
+        <label for="tab2">Level 2</label>
+        </li>
+        <li class="tab3">
+        <label for="tab3">Level 3</label>
+            <p>Year 2</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>   
+            <p>Year 3</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>
+        <button type="submit" name="Submit">Save</button>
+ </div>   
+ <div class="AssignInstance">
+    <p>Edit Instance</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Academic</p>
+        <select name="ChooseAcademic">
+            <option> IT Fundamentals </option>
+            <option> Internet Client Engineering </option>
+            <option> Industry Project 3B </option>
+            </select>
+            <p>Year</p>
+            <select name="ChooseYear">
+                <option> IT Fundamentals </option>
+                <option> Internet Client Engineering </option>
+                <option> Industry Project 3B </option>
+                </select>
+                <p>Month</p>
+                <select name="ChooseMonth">
+                    <option> IT Fundamentals </option>
+                    <option> Internet Client Engineering </option>
+                    <option> Industry Project 3B </option>
+                    </select>
+            </select>
+            <p>Choose Subject</p>
+        <p> Year 1</p>
+        <input checked="checked" id="tab1" type="radio" name="pct"/>
+        <input id="tab2" type="radio" name="pct"/>
+        <input id="tab3" type="radio" name="pct"/>
+        <nav>
+        <ul>
+        <li class="tab1">
+        <label for="tab1">Level 1</label>
+        </li>
+        <li class="tab2">
+        <label for="tab2">Level 2</label>
+        </li>
+        <li class="tab3">
+        <label for="tab3">Level 3</label>
+            <p>Year 2</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>   
+            <p>Year 3</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>
+        <button type="submit" name="Submit">Save</button>
+ </div>
+ <div class="DeleteAcademic">
+    <p>Delete Academic</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Academic</p>
+        <select name="Choose Academic">
+            <option> IT Fundamentals </option>
+            <option> Internet Client Engineering </option>
+            <option> Industry Project 3B </option>
+            </select>
+        <button type="submit" name="Submit">Delete</button>
+ </div>  
+ <div class="AvailableAcademics">
+    <p>Available Academics</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Required Qualification</p>
+        <select name="Required Qualification">
+            <option>CSE1ITX_2020_January</option>
+            <option> CSE2ICX_2021_August </option>
+            <option> CSE3PBX_2023_February  </option>
+            </select>
+            <p>Year</p>
+        <select name="Year">
+            <option>CSE1ITX_2020_January</option>
+            <option> CSE2ICX_2021_August </option>
+            <option> CSE3PBX_2023_February  </option>
+            </select>
+            <p>Month</p>
+        <select name="Month">
+            <option>CSE1ITX_2020_January</option>
+            <option> CSE2ICX_2021_August </option>
+            <option> CSE3PBX_2023_February  </option>
+            </select>
+        <button type="submit" name="Submit">Search</button>
+ </div>  
+ <div class="AddNewAcademic">
+    <p>Add New Academic</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Full Name</p>
+        <input type="text" name="mail" placeholder="Full Name">
+        <p>Choose Subject</p>
+        <p> Year 1</p>
+        <input checked="checked" id="tab1" type="radio" name="pct"/>
+        <input id="tab2" type="radio" name="pct"/>
+        <input id="tab3" type="radio" name="pct"/>
+        <nav>
+        <ul>
+        <li class="tab1">
+        <label for="tab1">Level 1</label>
+        </li>
+        <li class="tab2">
+        <label for="tab2">Level 2</label>
+        </li>
+        <li class="tab3">
+        <label for="tab3">Level 3</label>
+            <p>Year 2</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>   
+            <p>Year 3</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>
+        <button type="submit" name="Submit">Add</button>
+ </div>  
+ <div class="EditAcademic">
+    <p>Edit Academic</p>
+    <form class="contact-form" action="Reponse.html" method="post">
+        <p>Choose Academic</p>
+        <select name="Choose Academic">
+            <option>CSE1ITX_2020_January</option>
+            <option> CSE2ICX_2021_August </option>
+            <option> CSE3PBX_2023_February  </option>
+            </select>
+        <p>New Name</p>
+        <input type="text" name="mail" placeholder="Full Name">
+        <p>Choose Subject</p>
+        <p> Year 1</p>
+        <input checked="checked" id="tab1" type="radio" name="pct"/>
+        <input id="tab2" type="radio" name="pct"/>
+        <input id="tab3" type="radio" name="pct"/>
+        <nav>
+        <ul>
+        <li class="tab1">
+        <label for="tab1">Level 1</label>
+        </li>
+        <li class="tab2">
+        <label for="tab2">Level 2</label>
+        </li>
+        <li class="tab3">
+        <label for="tab3">Level 3</label>
+            <p>Year 2</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>   
+            <p>Year 3</p>
+            <input checked="checked" id="tab1" type="radio" name="pct"/>
+            <input id="tab2" type="radio" name="pct"/>
+            <input id="tab3" type="radio" name="pct"/>
+            <nav>
+            <ul>
+            <li class="tab1">
+            <label for="tab1">Level 1</label>
+            </li>
+            <li class="tab2">
+            <label for="tab2">Level 2</label>
+            </li>
+            <li class="tab3">
+            <label for="tab3">Level 3</label>
+        <button type="submit" name="Submit">Save</button>
+ </div>  
 </div>
 </div>
 </body>
