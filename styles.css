@@ -131,11 +131,11 @@
   margin: 0 auto;
 
   }
-
   img.latrobeLogo{
     width: 100%;
 
 }
+
 .imgcontainerlogo {
     text-align: center;
         margin: 24px 0 12px 0;
@@ -145,20 +145,24 @@
 /* Start of Web Pages CSS Code */
 
 .header{
-    background: #004A80;
-    text-align: center;
-    block-size: 125px;
-    font-size: 30px;
-    font-family: sans-serif;
-    padding-top:  2.5%;
-    color: #fff;
+  background: #004A80;
+  text-align: center;
+  block-size: 125px;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding-top:  2.5%;
+  color: #fff;
 }
 .headerimg{
-    position: absolute;
-   top: 0px;
-   right: 0px;
-   width: 8.77%;
-   height: 8.77%;
+  position:absolute;
+  float: right;
+  vertical-align: top;
+  top: 0px;
+  right: 0px;
+  width: 8.77%;
+  height: 8.77%;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 .header .row{
     margin-top: 70px;
@@ -169,16 +173,30 @@
     padding: 20px;
 }
 nav{
-    flex:1 1;
-    text-align: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  color: #fff;
 }
-nav ul{
-     display: inline-block; 
-     list-style-type: none; 
-    }
-nav ul li{
-    display: inline-block;
-    margin-right: 20px; 
+nav a{
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  margin-left: 30px;
+}
+nav a:hover:not(.active) {
+  color: teal;
+
+}
+    
+nav a:hover:not(.active){
+    
+    color: #000000;
+
     }
 .Container{
     margin: auto;
@@ -203,3 +221,111 @@ nav ul li{
       }
 
  /* End of Web Page CSS*//* Credit to Jayden */
+
+
+    .lvls{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px
+    }
+    .Schedule .radio {
+      display: none;
+        
+    }
+
+    .Schedule .radiolabel{
+      padding: 10px 36px;
+      background-color: white;
+      color:black;
+      border: 2px solid #8B8B8B;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 19.5px;
+      
+    }
+
+  #lvl1:checked ~ .lvl1label,
+  #lvl2:checked ~ .lvl2label,
+  #lvl3:checked ~ .lvl3label{
+
+    background-color: #004A80;
+    color: #fff;
+
+
+  }
+
+  .selectbox {
+    width: 138px;
+    height: 39px;
+    text-align: center;
+    background:#004A80;
+    border: 2px solid #004A80;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .Scheduleinstanceinfo{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 100px;
+  text-align: center;
+  
+  }
+
+
+  .Scheduleinstanceallocation{
+    width: 291px;
+    height: 345px;
+    left: 781px;
+    top: 874px;
+
+    padding: 10px 15px;
+  background: #FFFFFF;
+  border: 3px solid #004A80;
+  border-radius: 5px;
+
+  }
+  .Scheduleinstanceinformantion{
+    width: 291px;
+    height: 345px;
+    left: 781px;
+    top: 874px;
+
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border: 3px solid #004A80;
+    border-radius: 5px;
+  }
+
+  .Scheduleinstanceinfo select{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .Scheduleinstanceinfo label{
+      font-style: normal;
+      line-height: 10px;
+      font-size: 18px;
+      padding-left: 10px;
+      color: #3C3C3C;
+      display: block;
+      margin-top: 10%;
+    text-align: left;
+
+  }
+  #combobox2 {
+    width: 290px;
+    height: 46px;
+    
+    background: #F0F0F0;
+    border-width: 2px 2px 2px 1px;
+    border-style: solid;
+    border-color: #004A80;
+    border-radius: 0px 6px 6px 0px;
+    padding-left: 10px;
+  }

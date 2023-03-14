@@ -7,15 +7,17 @@
     <title>Schedule</title>
 </head>
 <body>
+    
     <div class="header">
+        
         <h1>Didasko Instance Schedule</h1>
+        
         <nav>
-            <ul>
-                <li><a href="academics.html">Academic</a></li> 
-            <li><a href="instances.html">Instances</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="subjects.html">Subjects</a></li>
-            </ul>
+            <div class="links">
+            <label><a class="active">Schedule</a></label>
+            <label><a href="academics.html">Academics</a></label>
+            <label><a href="instances.html">Instances</a></label>
+            <label><a href="subjects.html">Subjects</a></label>
         </nav>
         <div class="headerimg">
             <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
@@ -25,30 +27,26 @@
     <div class="Container">
     <div class="ScheduleDisplay">
         <div class="Schedule">
-            <input checked="checked" id="tab1" type="radio" name="pct"/>
-            <input id="tab2" type="radio" name="pct"/>
-            <input id="tab3" type="radio" name="pct"/>
-            <nav>
-            <ul>
-            <li class="tab1">
-            <label for="tab1">Level 1</label>
-            </li>
-            <li class="tab2">
-            <label for="tab2">Level 2</label>
-            </li>
-            <li class="tab3">
-            <label for="tab3">Level 3</label>
-            </li>
-            </ul>
-            </nav>
+            <div class = "lvls">
+            <input id="lvl1" type="radio" name="Level" class="radio" checked/>
+            <label class="radiolabel lvl1label" for="lvl1">Level 1</label>
+
+            <input id="lvl2" type="radio" name="Level" class="radio" checked/>
+            <label class="radiolabel lvl2label"  for="lvl2">Level 2</label>
+
+            <input id="lvl3" type="radio" name="Level" class="radio" checked/>
+            <label class="radiolabel lvl3label"  for ="lvl3">Level 3</label>
+            
+            <select name="year" class="selectbox">
+                <option> 2021 </option>
+                <option> 2022 </option>
+                <option> 2023 </option>   
+               </select>
             </div>
-            <select name="year">
-             <option> 2021 </option>
-             <option> 2022 </option>
-             <option> 2023 </option>   
-            </select>
-            <table>
-                
+        
+        <div>
+       
+            <table class="scheduleTable"> 
                 <tr>
                     <th></th>
                     <th>Jan</th>
@@ -64,49 +62,106 @@
                     <th>Nov</th>
                     <th>Dec</th>
                 </tr>
-                <tr>
-                    <th>CSEBGX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3CIX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3NWX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3OTX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3WSX</th>   
-                </tr>
-                <tr>
-                    <th>CSEPAX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3PBX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3PEX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3ACX</th>   
-                </tr>
-                <tr>
-                    <th>CES3SOX</th>   
-                </tr>
-                <tr>
-                    <th>CSE3BDX</th>   
-                </tr>
-                <tr>
-                    <th>CES3PCX</th>   
-                </tr>
-                <tr>
-                    <th>CES3CAX</th>   
-                </tr>
-                <tr>
-                    <th>CES3CBX</th>   
-                </tr>
-            </table>
+                <!-- Javascript code needs to go here and CSS needs to be 
+                implemented -->
+                </div>
+
+            </div>
+
+        <div  class="Scheduleinstanceinfo">
+
+            <div class="Scheduleinstanceallocation">
+                
+                
+
+                <h2> View Instance Allocation</h2>
+            <label for="JsAllocation">Academic Name</label>
+            <br>
+            
+            
+            
+            <input type="text" name="JsAllocation" id="combobox2" list="instance_list" placeholder="Enter Academic">
+    <script>function comboBox(){
+        var comboValues = ['This', 'Is', 'Where', 'The', 'Academics', 'Will', 'Be'];
+        var comboList = document.createElement('datalist');
+        comboList.id = "instance_list";
+        comboValues.forEach(comboValues =>{
+        var option = document.createElement('option');
+        option.innerHTML = comboValues;
+        option.value = comboValues;
+        comboList.appendChild(option);
+        })
+        document.body.appendChild(comboList);
+       }
+       comboBox();</script>
+       <br>
+    
+    <select name="year" class="selectbox">
+        <option> 2021 </option>
+        <option> 2022 </option>
+        <option> 2023 </option>   
+       </select>
+
+       <select name="month" class="selectbox">
+        <option> Janurary </option>
+        <option> Feburary </option>
+        <option> March </option>
+        <option>April </option>
+        <option>May </option>
+        <option>June </option>
+        <option>July </option>
+        <option>August</option> 
+        <option>September </option>
+        <option>October </option>
+        <option> November </option> 
+        <option>December </option> 
+       </select>
+       <br>
+
+       <li> Instances go here</li>
+       <li> Instances  go here</li>
+
+
+    </div>
+    <div class="Scheduleinstanceinformantion">
+        
+
+        <h2> View Instance Info</h2>
+        <label for="JsInfo">Instance Name</label>
+        <br>
+        
+        
+        <input type="text" name="JsInfo" id="combobox2" list="instance_list" placeholder="Enter Instance">
+<script>function comboBox(){
+    var comboValues = ['This', 'Is', 'Where', 'The', 'Instances', 'Will', 'Be'];
+    var comboList = document.createElement('datalist');
+    comboList.id = "instance_list";
+    comboValues.forEach(comboValues =>{
+    var option = document.createElement('option');
+    option.innerHTML = comboValues;
+    option.value = comboValues;
+    comboList.appendChild(option);
+    })
+    document.body.appendChild(comboList);
+   }
+   comboBox();</script>
+    <br>
+   <label> Student Enrolements:</label>
+   <br>
+   <li> number of enrollments go here</li>
+   <label>Academics</label>
+   <br> 
+   <li> Academics go here</li>
+   <li> Academics go here</li>
+
+
+        </div>
+
+        </div>
+
+    
+
+
     </div>
     </div>
 </body>
