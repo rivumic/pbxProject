@@ -10,25 +10,23 @@
     <div class="header">
         <h1>Didasko Instance Schedule</h1>
         <nav>
-            <div class="links">
-            <label><a href="schedule.html">Schedule</a></label>
-            <label><a href="academics.html">Academics</a></label>
-            <label><a class="active">Instances</a></label>
-            <label><a href="subjects.html">Subjects</a></label>
+            <ul>
+                <li><a href="academics.html">Academic</a></li> 
+            <li><a href="instances.html">Instances</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            </ul>
         </nav>
-
-
-
         <div class="headerimg">
             <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
              alt="Latrobe logo" class="latrobeLogo">
           </div>
         </div>
     <div class="Container">
-    <div class="InstanceDisplay">
-        <div class="AddNewInstance">
-            <p>Add New Instance</p>
-            <form class="contact-form" action="Reponse.html" method="post">
+        <div class="flex-container">
+            <div>
+            <h1 id="FormName">Add New Instance</h1>
+            <form class="contact-form" action="" method="post">
                 <p> Instance Name</p>
                 <input type="text" name="mail" placeholder="Instance Name">
                 <p>Subject</p>
@@ -51,11 +49,12 @@
                             </select>
                             <p>Student Enrolments</p>
                             <input type="text" name="mail" placeholder="Student Enrolments">
+                            <br></br>
                 <button type="submit" name="Submit">Save</button>
          </div>   
-         <div class="EditInstance">
-            <p>Edit Instance</p>
-            <form class="contact-form" action="Reponse.html" method="post">
+         <div>
+            <h1 id="FormName">Edit Instance</h1>
+            <form class="contact-form" action="" method="post">
                 <p>Choose Instance</p>
                 <select name="Choose Instance">
                     <option> IT Fundamentals </option>
@@ -84,11 +83,13 @@
                             </select>
                             <p>Student Enrolments</p>
                             <input type="text" name="mail" placeholder="Student Enrolments">
+                            <br></br>
                 <button type="submit" name="Submit">Save</button>
          </div>
-         <div class="ViewInstance">
-            <p>View Instance Allocation</p>
-            <form class="contact-form" action="Reponse.html" method="post">
+         <div class="rightcolumn">
+            <div>
+            <h1 id="FormName">View Instance Allocation</h1>
+            <form class="contact-form" action="" method="post">
                 <select name="Academic">
                     <option> Ben Arther </option>
                     <option> Ted Moseby </option>
@@ -113,22 +114,25 @@
                     <option> November </option>
                     <option> December </option>
                     </select>
+                    <br></br>
                 <button type="submit" name="Submit">Delete</button>
          </div>  
-         <div class="DeleteInstance">
-            <p>Delete Instance</p>
-            <form class="contact-form" action="Reponse.html" method="post">
+            <div id="DeleteInstance">
+            <h1 id="FormName">Delete Instance</h1>
+            <form class="contact-form" action="" method="post">
                 <select name="Instance">
                     <option>CSE1ITX_2020_January</option>
                     <option> CSE2ICX_2021_August </option>
                     <option> CSE3PBX_2023_February  </option>
                     </select>
+                    <br></br>
                 <button type="submit" name="Submit">Delete</button>
-         </div>  
+                </div>
+            </div>
     </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2023 - Didasko</p>   
     </div>
 </body>
-<footer>
-    <p>Copyright 2023 - Didasko</p>   
-   </footer>
 </html>
