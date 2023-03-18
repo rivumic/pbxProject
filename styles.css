@@ -207,22 +207,62 @@ nav a:hover:not(.active){
     font-family: sans-serif;  
     }   
 .flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;  
-        justify-content: space-evenly;
-      }
-      .flex-container > div {
-        width: 450px;
-        margin: 10px;
-        text-align: center;
-        line-height: 20px;
-        font-size: 15px;  
-      }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: space-evenly;
+  margin: auto;
+  width: 75%;
+  border: 3px solid green;
+  padding: 10px;
+  font-size: large;
+  font-family: sans-serif; 
+}
+.flex-container > div {
+  width: 350px;
+  margin: 10px;
+  line-height: 30px;
+  font-size: 15px;  
+  border: 1.5px solid #004A80;
+}
+#FormName {
+  text-align: center;
+}
+.rightcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactform label {
+  width: 50px;
+  padding: 5px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+}   
+.contactform input[type="checkbox"] {
+  display: none;
+}
+.contactform input[type="checkbox"]:checked + label {
+  background-color: #004A80;
+  color: #ffffff;
+}
+.contactform button[type="submit"]{
+  background-color: #004A80;
+  color: #ffffff;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #004A80;
+  color: white;
+  text-align: center;
+  font-size:large;
+}    
 
- /* End of Web Page CSS*//* Credit to Jayden */
-
-
+ /* End of Form Web Pages CSS*//* Credit to Jayden */
+/* Start of Schedule Page CSS*/
     .lvls{
       display: flex;
       align-items: center;
@@ -329,3 +369,4 @@ nav a:hover:not(.active){
     border-radius: 0px 6px 6px 0px;
     padding-left: 10px;
   }
+/* end of schedule page CSS */
