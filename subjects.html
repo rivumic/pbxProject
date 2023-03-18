@@ -10,23 +10,23 @@
     <div class="header">
         <h1>Didasko Instance Schedule</h1>
         <nav>
-            <div class="links">
-            <label><a href="schedule.html">Schedule</a></label>
-            <label><a href="academics.html">Academics</a></label>
-            <label><a href="instances.html">Instances</a></label>
-            <label><a class="active">Subjects</a></label>
+            <ul>
+                <li><a href="academics.html">Academic</a></li> 
+            <li><a href="instances.html">Instances</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="subjects.html">Subjects</a></li>
+            </ul>
         </nav>
-
         <div class="headerimg">
             <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
              alt="Latrobe logo" class="latrobeLogo">
           </div>
         </div>
     <div class="Container">
-    <div class="SubjectsDisplay">
-     <div class="AddNewSubject">
-        <p>Add New Subject</p>
-        <form class="contact-form" action="Reponse.html" method="post">
+    <div class="flex-container">
+     <div>
+        <h1 id="FormName">Add New Subject</h1>
+        <form class="contact-form" action="" method="post">
             <p>Subject Name</p>
             <input type="text" name="Subject">
             <p>Year Level</p>
@@ -35,11 +35,12 @@
                 <option> 2 </option>
                 <option> 3 </option>
                 </select>
-            <button type="submit" name="Submit">Add</button>
-     </div>   
-     <div class="EditSubject">
-        <p>Edit Subject</p>
-        <form class="contact-form" action="Reponse.html" method="post">
+                <br></br>
+            <button type="submit" name="Submit">Add</button>   
+        </div>
+     <div> 
+        <h1 id="FormName">Edit Subject</h1>
+        <form class="contact-form" action="" method="post">
             <select name="Subject">
                 <option> IT Fundamentals </option>
                 <option> Internet Client Engineering </option>
@@ -53,23 +54,24 @@
                 <option> 2 </option>
                 <option> 3 </option>
                 </select>
+                <br></br>
             <button type="submit" name="Submit">Save</button>
-     </div>
-     <div class="DeleteSubject">
-        <p>Delete Subject</p>
-        <form class="contact-form" action="Reponse.html" method="post">
+        </div>
+     <div>
+        <h1 id="FormName">Delete Subject</h1>
+        <form class="contact-form" action="" method="post">
             <select name="Subject">
                 <option> IT Fundamentals </option>
                 <option> Internet Client Engineering </option>
                 <option> Industry Project 3B </option>
                 </select>
+                <br></br>
             <button type="submit" name="Submit">Delete</button>
+        </div>
      </div>
-
     </div>
+    <div class="footer">
+        <p>Copyright 2023 - Didasko</p>   
     </div>
 </body>
-<footer>
- <p>Copyright 2023 - Didasko</p>   
-</footer>
 </html>
