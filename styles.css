@@ -369,4 +369,40 @@ nav a:hover:not(.active){
     border-radius: 0px 6px 6px 0px;
     padding-left: 10px;
   }
+
+  .schedulebox {
+    height: 34px;
+    width: 34px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  .graybox {
+    background-color: gray;
+  }
+
+  .greenbox {
+    background-color: green;
+    
+  }
+
+  .redbox {
+  background-color: red;
+  }
+
+  #scheduleTable{
+    border-spacing: 70px;
+
+  }
+
+  .schedulelabel{
+  width: 34px;
+  height: 34px;
+  color: white;
+  background: #004A80;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  }
 /* end of schedule page CSS */
