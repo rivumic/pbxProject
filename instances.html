@@ -1,106 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Instances</title>
-</head>
-<body>
     <div class="header">
         <h1>Didasko Instance Schedule</h1>
         <nav>
-            <ul>
-                <li><a href="academics.html">Academic</a></li> 
-            <li><a href="instances.html">Instances</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="subjects.html">Subjects</a></li>
-            </ul>
+            <div class="links">
+            <label><a class="active">Schedule</a></label>
+            <label><a href="academics.html">Academics</a></label>
+            <label><a href="instances.html">Instances</a></label>
+            <label><a href="subjects.html">Subjects</a></label>
         </nav>
         <div class="headerimg">
             <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
              alt="Latrobe logo" class="latrobeLogo">
           </div>
         </div>
-    <div class="Container">
+</head>
+<body>
         <div class="flex-container">
             <div>
-            <h1 id="FormName">Add New Instance</h1>
-            <form class="contact-form" action="" method="post">
+                <div class="form-border">
+            <h2 id="FormName">Add New Instance</h2>
+            <form class="scheduleform" action="" method="post">
                 <p> Instance Name</p>
-                <input type="text" name="mail" placeholder="Instance Name">
+                <input type="text" name="UserInput" placeholder="Instance Name">
                 <p>Subject</p>
-                <select name="Subject">
-                    <option> 1 </option>
-                    <option> 2 </option>
-                    <option> 3 </option>
-                    </select>
-                    <p>Year</p>
-                    <select name="Year">
-                        <option> 1 </option>
-                        <option> 2 </option>
-                        <option> 3 </option>
-                        </select>
-                        <p>Month</p>
-                        <select name="Month">
-                            <option> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                            </select>
-                            <p>Student Enrolments</p>
-                            <input type="text" name="mail" placeholder="Student Enrolments">
-                            <br></br>
-                <button type="submit" name="Submit">Save</button>
-         </div>   
-         <div>
-            <h1 id="FormName">Edit Instance</h1>
-            <form class="contact-form" action="" method="post">
-                <p>Choose Instance</p>
-                <select name="Choose Instance">
+                <select name="ChooseSubject">
                     <option> IT Fundamentals </option>
                     <option> Internet Client Engineering </option>
                     <option> Industry Project 3B </option>
                     </select>
-                <p> Instance Name</p>
-                <input type="text" name="mail" placeholder="Instance Name">
-                <p>Subject</p>
-                <select name="Subject">
-                    <option> 1 </option>
-                    <option> 2 </option>
-                    <option> 3 </option>
-                    </select>
                     <p>Year</p>
-                    <select name="Year">
-                        <option> 1 </option>
-                        <option> 2 </option>
-                        <option> 3 </option>
+                    <select name="ChooseYear">
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
                         </select>
                         <p>Month</p>
-                        <select name="Month">
-                            <option> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
+                        <select name="ChooseMonth">
+                            <option> January </option>
+                            <option> February </option>
+                            <option> March </option>
+                            <option> April </option>
+                            <option> May </option>
+                            <option> June </option>
+                            <option> July </option>
+                            <option> August </option>
+                            <option> September </option>
+                            <option> October </option>
+                            <option> November </option>
+                            <option> December </option>
                             </select>
                             <p>Student Enrolments</p>
-                            <input type="text" name="mail" placeholder="Student Enrolments">
+                            <input type="text" name="UserInput" placeholder="Student Enrolments">
                             <br></br>
-                <button type="submit" name="Submit">Save</button>
-         </div>
+                <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+            </form>
+            </div>
+         </div>   
+         <div>
+            <div class="form-border">
+            <h2 id="FormName">Edit Instance</h2>
+            <form class="scheduleform" action="" method="post">
+                <p>Choose Instance</p>
+                <select name="ChooseInstance">
+                    <option>CSE1ITX_2023_January IT Fundamentals</option>
+                    <option>CSE2ICX_2024_August Internet Client Engineering</option>
+                    <option>CSE3PBX_2025_February Industry Project 3B </option>
+                    </select>
+                <p>Instance Name</p>
+                <input type="text" name="UserInput" placeholder="Instance Name">
+                <p>Subject</p>
+                <select name="ChooseSubject">
+                    <option> IT Fundamentals </option>
+                    <option> Internet Client Engineering </option>
+                    <option> Industry Project 3B </option>
+                    </select>
+                    <p>Year</p>
+                    <select name="ChooseYear">
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        </select>
+                        <p>Month</p>
+                        <select name="ChooseMonth">
+                            <option> January </option>
+                            <option> February </option>
+                            <option> March </option>
+                            <option> April </option>
+                            <option> May </option>
+                            <option> June </option>
+                            <option> July </option>
+                            <option> August </option>
+                            <option> September </option>
+                            <option> October </option>
+                            <option> November </option>
+                            <option> December </option>
+                            </select>
+                            <p>Student Enrolments</p>
+                            <input type="text" name="UserInput" placeholder="Student Enrolments">
+                            <br></br>
+                            <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+                </form>
+                </div>
+            </div>
          <div class="rightcolumn">
             <div>
-            <h1 id="FormName">View Instance Allocation</h1>
-            <form class="contact-form" action="" method="post">
+                <div class="form-border">
+            <h2 id="FormName">View Instance Allocation</h2>
+            <form class="scheduleform" action="" method="post">
                 <select name="Academic">
                     <option> Ben Arther </option>
                     <option> Ted Moseby </option>
                     <option> Jessica Lange </option>
                     </select>
-                    <select name="Year">
+                    <select name="ChooseYear">
                     <option> 2021 </option>
                     <option> 2022 </option>
                     <option> 2023 </option>
                     </select>
-                    <select name="Month">
+                    <select name="ChooseMonth">
                     <option> January </option>
                     <option> February </option>
                     <option> March </option>
@@ -115,24 +137,36 @@
                     <option> December </option>
                     </select>
                     <br></br>
-                <button type="submit" name="Submit">Delete</button>
+                <button type="submit" name="Submit">&nbsp;Delete&nbsp;</button>
+                <p>&nbsp;CSE1PGX_2021_February</p>
+                <p>&nbsp;CSE1PGX_2021_March</p>
+                <p>&nbsp;CSE1OFX_2021_February</p>
+                <p>&nbsp;CSE1OFX_2021_March</p>
+                <p>&nbsp;CSE1IOX_2021_February</p>
+                <p>&nbsp;CSE1IOX_2021_February</p>
+            </form>
+                </div>
          </div>  
-            <div id="DeleteInstance">
-            <h1 id="FormName">Delete Instance</h1>
-            <form class="contact-form" action="" method="post">
-                <select name="Instance">
-                    <option>CSE1ITX_2020_January</option>
-                    <option> CSE2ICX_2021_August </option>
-                    <option> CSE3PBX_2023_February  </option>
+         <div id="smallerbox1">
+         <div class="form-border">
+            <h2 id="FormName">Delete Instance</h2>
+            <form class="scheduleform" action="" method="post">
+                <select name="ChooseInstance">
+                    <option> CSE1ITX_2023_January IT Fundamentals </option>
+                    <option> CSE2ICX_2024_August Internet Client Engineering </option>
+                    <option> CSE3PBX_2025_February Industry Project 3B </option>
                     </select>
                     <br></br>
-                <button type="submit" name="Submit">Delete</button>
+                <button type="submit" name="Submit">&nbsp;Delete&nbsp;</button>
+                </form>
+            </div>
                 </div>
             </div>
     </div>
-    </div>
+</body>
+<footer>
     <div class="footer">
         <p>Copyright 2023 - Didasko</p>   
-    </div>
-</body>
+    </div>   
+</footer>
 </html>
