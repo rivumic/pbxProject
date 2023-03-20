@@ -212,18 +212,22 @@ nav a:hover:not(.active){
   flex-wrap: wrap;  
   justify-content: space-evenly;
   margin: auto;
-  width: 75%;
-  border: 3px solid green;
+  width: 85%;
   padding: 10px;
-  font-size: large;
-  font-family: sans-serif; 
 }
 .flex-container > div {
   width: 350px;
   margin: 10px;
-  line-height: 30px;
+  line-height: 37.5px;
   font-size: 15px;  
-  border: 1.5px solid #004A80;
+  padding-left: 25px;
+  font-size: medium;
+  font-family: sans-serif;
+  padding-bottom: 5px;
+}
+.form-border {
+  border: 2.5px solid #004A80;
+  padding-left: 10px;
 }
 #FormName {
   text-align: center;
@@ -233,22 +237,96 @@ nav a:hover:not(.active){
   flex-direction: column;
   justify-content: space-between;
 }
-.contactform label {
-  width: 50px;
-  padding: 5px;
-  border: solid 2px #ccc;
+#smallerbox1 {
+  padding-top: 30px;
+}
+#smallerbox2 {
+  padding-bottom: 150px;
+}
+.scheduleform label {
+  width: 150px;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  border: solid 1.5px #000000;
   transition: all 0.3s;
+  font-size: small;
 }   
-.contactform input[type="checkbox"] {
+.scheduleform input[type="checkbox"] {
+  display: none;
+ 
+}
+.scheduleform input[type="checkbox"]:checked + label {
+  background-color: #004A80;
+  color: #ffffff;
+}
+.scheduleform label:hover{
+  background-color: #004A80;
+  color: #ffffff;
+}
+#AvailableAcademicsTB {
+  border-collapse: collapse;
+  width: 100%;
+}
+#AvailableAcademicsTB th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#AvailableAcademicsTB td, #AvailableAcademicsTB th {
+  border-right: 1px solid #ddd;
+  padding: 8px;
+}
+.deletion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5px;
+}
+.deletion label {
+  padding-right: 5px;
+}
+.deletion input[type="checkbox"] {
   display: none;
 }
-.contactform input[type="checkbox"]:checked + label {
+.deletion input[type="checkbox"]:checked + label {
+  background-color: #800000;
+  color: #ffffff;
+}
+.deletion label:hover{
+  background-color: #800000;
+  color: #ffffff;
+}
+.scheduleform button[type="submit"]{
+  font-size: large;
+  border-radius: 10px;
+  border: 2.5px solid #000000;
+}
+.scheduleform button:hover{
   background-color: #004A80;
   color: #ffffff;
 }
-.contactform button[type="submit"]{
-  background-color: #004A80;
-  color: #ffffff;
+.scheduleform select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid #004A80;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #dddddd;
+  text-align: left;
+  
+}
+.scheduleform input[type="text"] {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid #004A80;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  line-height: 1.1;
+  background-color: #dddddd;
 }
 .footer{
   position: fixed;
@@ -259,8 +337,7 @@ nav a:hover:not(.active){
   color: white;
   text-align: center;
   font-size:large;
-}    
-
+}   
  /* End of Form Web Pages CSS*//* Credit to Jayden */
 /* Start of Schedule Page CSS*/
     .lvls{
