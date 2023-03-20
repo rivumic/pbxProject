@@ -1,77 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Subject</title>
-</head>
-<body>
     <div class="header">
         <h1>Didasko Instance Schedule</h1>
         <nav>
-            <ul>
-                <li><a href="academics.html">Academic</a></li> 
-            <li><a href="instances.html">Instances</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="subjects.html">Subjects</a></li>
-            </ul>
+            <div class="links">
+            <label><a class="active">Schedule</a></label>
+            <label><a href="academics.html">Academics</a></label>
+            <label><a href="instances.html">Instances</a></label>
+            <label><a href="subjects.html">Subjects</a></label>
         </nav>
         <div class="headerimg">
             <img src="https://cdn.discordapp.com/attachments/488227259514224651/1082261146662342726/La-Trobe-Didasko-logo_C_1.png"
              alt="Latrobe logo" class="latrobeLogo">
           </div>
         </div>
-    <div class="Container">
+</head>
+<body>
     <div class="flex-container">
      <div>
-        <h1 id="FormName">Add New Subject</h1>
-        <form class="contact-form" action="" method="post">
+        <div class="form-border">
+        <h2 id="FormName">Add New Subject</h2>
+        <form class="scheduleform" action="" method="post">
             <p>Subject Name</p>
-            <input type="text" name="Subject">
+            <input type="text" name="Subject" placeholder="Subject Name">
             <p>Year Level</p>
-            <select name="year">
+            <select name="YearLevel">
                 <option> 1 </option>
                 <option> 2 </option>
                 <option> 3 </option>
                 </select>
                 <br></br>
-            <button type="submit" name="Submit">Add</button>   
+            <button type="submit" name="Submit">&nbsp;Add&nbsp;</button>  
+        </form> 
+        </div>
         </div>
      <div> 
-        <h1 id="FormName">Edit Subject</h1>
-        <form class="contact-form" action="" method="post">
-            <select name="Subject">
+        <div class="form-border">
+        <h2 id="FormName">Edit Subject</h2>
+        <form class="scheduleform" action="" method="post">
+            <p>Subject</p>
+            <select name="ChooseSubject">
                 <option> IT Fundamentals </option>
                 <option> Internet Client Engineering </option>
                 <option> Industry Project 3B </option>
                 </select>
             <p> New Subject Name</p>
-            <input type="text" name="mail" placeholder="New Subject Name">
+            <input type="text" name="UserInput" placeholder="New Subject Name">
             <p>Year Level</p>
-            <select name="year">
+            <select name="YearLevel">
                 <option> 1 </option>
                 <option> 2 </option>
                 <option> 3 </option>
                 </select>
                 <br></br>
-            <button type="submit" name="Submit">Save</button>
+            <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+        </form>
+    </div>
         </div>
      <div>
-        <h1 id="FormName">Delete Subject</h1>
-        <form class="contact-form" action="" method="post">
+        <div class="form-border">
+        <h2 id="FormName">Delete Subject</h2>
+        <form class="scheduleform" action="" method="post">
             <select name="Subject">
                 <option> IT Fundamentals </option>
                 <option> Internet Client Engineering </option>
                 <option> Industry Project 3B </option>
                 </select>
                 <br></br>
-            <button type="submit" name="Submit">Delete</button>
+            <button type="submit" name="Submit">&nbsp;Delete&nbsp;</button>
+            </form>
+        </div>
         </div>
      </div>
-    </div>
+</body>
+<footer>
     <div class="footer">
         <p>Copyright 2023 - Didasko</p>   
-    </div>
-</body>
+    </div>   
+</footer>
 </html>
