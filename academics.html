@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <script src="jquery-3.6.3.min.js"></script>
     <meta charset="utf-8" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Academics</title>
@@ -54,49 +55,56 @@
             </select>
             <p>Choose Instances</p>
             <p> Year 1</p>
-            <input type="checkbox" id="AIMAtab11" name="choice1"/>  <label for="AIMAtab11">CSE1ITX</label>
-            <input id="AIMAtab12" type="checkbox" name="choice2"/>  <label for="AIMAtab12">CSE1PGX</label>
-            <input id="AIMAtab13" type="checkbox" name="choice3"/>  <label for="AIMAtab13">CSE1CFX</label>
-            <input id="AIMAtab14" type="checkbox" name="choice4"/>  <label for="AIMAtab14">CSE1OFX</label>
-            <input id="AIMAtab15" type="checkbox" name="choice5"/>  <label for="AIMAtab15">CSE1ISX</label>
-            <input id="AIMAtab16" type="checkbox" name="choice6"/>  <label for="AIMAtab16">CSE1SPX</label>
-            <input id="AIMAtab17" type="checkbox" name="choice7"/>   <label for="AIMAtab17">CSE1SIX</label>
-            <input id="AIMAtab18" type="checkbox" name="choice8"/>  <label for="AIMAtab18">CSE1IOX</label>  
+            <input class="AIMAtab" id="AIMAtab11" type="checkbox" name="choice"/>  <label for="AIMAtab11">CSE1ITX</label>
+            <input class="AIMAtab" id="AIMAtab12"  type="checkbox" name="choice"/>  <label for="AIMAtab12">CSE1PGX</label>
+            <input class="AIMAtab" id="AIMAtab13"  type="checkbox" name="choice"/>  <label for="AIMAtab13">CSE1CFX</label>
+            <input class="AIMAtab" id="AIMAtab14"  type="checkbox" name="choice"/>  <label for="AIMAtab14">CSE1OFX</label>
+            <input class="AIMAtab" id="AIMAtab15"  type="checkbox" name="choice"/>  <label for="AIMAtab15">CSE1ISX</label>
+            <input class="AIMAtab" id="AIMAtab16"  type="checkbox" name="choice"/>  <label for="AIMAtab16">CSE1SPX</label>
+            <input class="AIMAtab" id="AIMAtab17"  type="checkbox" name="choice"/>   <label for="AIMAtab17">CSE1SIX</label>
+            <input class="AIMAtab" id="AIMAtab18"  type="checkbox" name="choice"/>  <label for="AIMAtab18">CSE1IOX</label>  
             <p>Year 2</p>
-            <input type="checkbox" id="AIMAtab21" name="choice9"/>  <label for="AIMAtab21">CSE2NFX</label>
-            <input id="AIMAtab22" type="checkbox" name="choice10"/>  <label for="AIMAtab22">CSE2DCX</label>
-            <input id="AIMAtab23" type="checkbox" name="choice11"/>  <label for="AIMAtab23">CSE2ICX</label>
-            <input id="AIMAtab24" type="checkbox" name="choice12"/>  <label for="AIMAtab24">CSE2CNX</label>
-            <input id="AIMAtab25" type="checkbox" name="choice13"/>  <label for="AIMAtab25">CSE2SDX</label>
-            <input id="AIMAtab26" type="checkbox" name="choice14"/>  <label for="AIMAtab26">CSE2PMX</label>
-            <input id="AIMAtab27" type="checkbox" name="choice15"/>   <label for="AIMAtab27">CSE2VVX</label>
-            <input id="AIMAtab28" type="checkbox" name="choice16"/>  <label for="AIMAtab28">CSE2DMX</label>
-            <input id="ASMAtab29" type="checkbox" name="choice17"/>  <label for="AIMAtab29">CSE2MAX</label>
-            <input id="AIMAtab210" type="checkbox" name="choice18"/>  <label for="AIMAtab210">CSE2OSX</label>
-            <input id="AIMAtab211" type="checkbox" name="choice19"/>  <label for="AIMAtab211">CSE2ADX</label>
-            <input id="AIMAtab212" type="checkbox" name="choice20"/>  <label for="AIMAtab212">CSE2CPX</label>
-            <input id="AIMAtab213" type="checkbox" name="choice21"/>  <label for="AIMAtab213">CSE2MLX</label>
-            <input id="AIMAtab214" type="checkbox" name="choice22"/>  <label for="AIMAtab214">CSE2SAX</label>
-            <input id="AIMAtab215" type="checkbox" name="choice23"/>   <label for="AIMAtab215">CSE2ANX</label>
-            <input id="AIMAtab216" type="checkbox" name="choice24"/>  <label for="AIMAtab216">CSE2WDX</label>
+            <input class="AIMAtab" id="AIMAtab21" type="checkbox" name="choice9"/>  <label for="AIMAtab21">CSE2NFX</label>
+            <input class="AIMAtab" id="AIMAtab22" type="checkbox" name="choice10"/>  <label for="AIMAtab22">CSE2DCX</label>
+            <input class="AIMAtab" id="AIMAtab23" type="checkbox" name="choice11"/>  <label for="AIMAtab23">CSE2ICX</label>
+            <input class="AIMAtab" id="AIMAtab24" type="checkbox" name="choice12"/>  <label for="AIMAtab24">CSE2CNX</label>
+            <input class="AIMAtab" id="AIMAtab25" type="checkbox" name="choice13"/>  <label for="AIMAtab25">CSE2SDX</label>
+            <input class="AIMAtab" id="AIMAtab26" type="checkbox" name="choice14"/>  <label for="AIMAtab26">CSE2PMX</label>
+            <input class="AIMAtab" id="AIMAtab27" type="checkbox" name="choice15"/>   <label for="AIMAtab27">CSE2VVX</label>
+            <input class="AIMAtab" id="AIMAtab28" type="checkbox" name="choice16"/>  <label for="AIMAtab28">CSE2DMX</label>
+            <input class="AIMAtab" id="AIMAtab29" type="checkbox" name="choice17"/>  <label for="AIMAtab29">CSE2MAX</label>
+            <input class="AIMAtab" id="AIMAtab210" type="checkbox" name="choice18"/>  <label for="AIMAtab210">CSE2OSX</label>
+            <input class="AIMAtab" id="AIMAtab211" type="checkbox" name="choice19"/>  <label for="AIMAtab211">CSE2ADX</label>
+            <input class="AIMAtab" id="AIMAtab212" type="checkbox" name="choice20"/>  <label for="AIMAtab212">CSE2CPX</label>
+            <input class="AIMAtab" id="AIMAtab213" type="checkbox" name="choice21"/>  <label for="AIMAtab213">CSE2MLX</label>
+            <input class="AIMAtab" id="AIMAtab214" type="checkbox" name="choice22"/>  <label for="AIMAtab214">CSE2SAX</label>
+            <input class="AIMAtab" id="AIMAtab215" type="checkbox" name="choice23"/>   <label for="AIMAtab215">CSE2ANX</label>
+            <input class="AIMAtab" id="AIMAtab216" type="checkbox" name="choice24"/>  <label for="AIMAtab216">CSE2WDX</label>
             <p>Year 3</p>
-            <input type="checkbox" id="AIMAtab31" name="choice25"/>  <label for="AIMAtab31">CSE3BGX</label>
-            <input id="AIMAtab32" type="checkbox" name="choice26"/>  <label for="AIMAtab32">CSE3CIX</label>
-            <input id="AIMAtab33" type="checkbox" name="choice27"/>  <label for="AIMAtab33">CSE3CSX</label>
-            <input id="AIMAtab34" type="checkbox" name="choice28"/>  <label for="AIMAtab34">CSE3NWX</label>
-            <input id="AIMAtab35" type="checkbox" name="choice29"/>  <label for="AIMAtab35">CSE3OTX</label>
-            <input id="AIMAtab36" type="checkbox" name="choice30"/>  <label for="AIMAtab36">CSE3WSX</label>
-            <input id="AIMAtab37" type="checkbox" name="choice31"/>   <label for="AIMAtab37">CSE3PAX</label>
-            <input id="AIMAtab38" type="checkbox" name="choice32"/>  <label for="AIMAtab38">CSE3PBX</label>
-            <input id="AIMAtab39" type="checkbox" name="choice33"/>  <label for="AIMAtab39">CSE3PEX</label>
-            <input id="AIMAtab310" type="checkbox" name="choice34"/>  <label for="AIMAtab310">CSE3ACX</label>
-            <input id="AIMAtab311" type="checkbox" name="choice35"/>  <label for="AIMAtab311">CSE3SOX</label>
-            <input id="AIMAtab312" type="checkbox" name="choice36"/>  <label for="AIMAtab312">CSE3BDX</label>
-            <input id="AIMAtab313" type="checkbox" name="choice37"/>  <label for="AIMAtab313">CSE3PCX</label>
-            <input id="AIMAtab314" type="checkbox" name="choice38"/>  <label for="AIMAtab314">CSE3CAX</label>
-            <input id="AIMAtab315" type="checkbox" name="choice39"/>   <label for="AIMAtab315">CSE3CBX</label>
+            <input class="AIMAtab" id="AIMAtab31" type="checkbox" name="choice25"/>  <label for="AIMAtab31">CSE3BGX</label>
+            <input class="AIMAtab" id="AIMAtab32" type="checkbox" name="choice26"/>  <label for="AIMAtab32">CSE3CIX</label>
+            <input class="AIMAtab" id="AIMAtab33" type="checkbox" name="choice27"/>  <label for="AIMAtab33">CSE3CSX</label>
+            <input class="AIMAtab" id="AIMAtab34" type="checkbox" name="choice28"/>  <label for="AIMAtab34">CSE3NWX</label>
+            <input class="AIMAtab" id="AIMAtab35" type="checkbox" name="choice29"/>  <label for="AIMAtab35">CSE3OTX</label>
+            <input class="AIMAtab" id="AIMAtab36" type="checkbox" name="choice30"/>  <label for="AIMAtab36">CSE3WSX</label>
+            <input class="AIMAtab" id="AIMAtab37" type="checkbox" name="choice31"/>   <label for="AIMAtab37">CSE3PAX</label>
+            <input class="AIMAtab" id="AIMAtab38" type="checkbox" name="choice32"/>  <label for="AIMAtab38">CSE3PBX</label>
+            <input class="AIMAtab" id="AIMAtab39" type="checkbox" name="choice33"/>  <label for="AIMAtab39">CSE3PEX</label>
+            <input class="AIMAtab" id="AIMAtab310" type="checkbox" name="choice34"/>  <label for="AIMAtab310">CSE3ACX</label>
+            <input class="AIMAtab" id="AIMAtab311" type="checkbox" name="choice35"/>  <label for="AIMAtab311">CSE3SOX</label>
+            <input class="AIMAtab" id="AIMAtab312" type="checkbox" name="choice36"/>  <label for="AIMAtab312">CSE3BDX</label>
+            <input class="AIMAtab" id="AIMAtab313" type="checkbox" name="choice37"/>  <label for="AIMAtab313">CSE3PCX</label>
+            <input class="AIMAtab" id="AIMAtab314" type="checkbox" name="choice38"/>  <label for="AIMAtab314">CSE3CAX</label>
+            <input class="AIMAtab" id="AIMAtab315" type="checkbox" name="choice39"/>   <label for="AIMAtab315">CSE3CBX</label>
             <br><br> 
             <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+            <script> $('input[class=AIMAtab]').change(function(e){
+                if ($('input[class=AIMAtab]:checked').length > 6) {
+                     $(this).prop('checked', false)
+                     alert("Allowed only up to 6 instances per Academic");
+                }
+             })
+</script>
     </form>
 </div>
  </div>
@@ -134,49 +142,56 @@
             </select>
             <p>Choose Instances</p>
             <p> Year 1</p>
-                <input type="checkbox" id="AISRtab11" name="choice1"/>  <label for="AISRtab11">CSE1ITX</label>
-                <input id="AISRtab12" type="checkbox" name="choice2"/>  <label for="AISRtab12">CSE1PGX</label>
-                <input id="AISRtab13" type="checkbox" name="choice3"/>  <label for="AISRtab13">CSE1CFX</label>
-                <input id="AISRtab14" type="checkbox" name="choice4"/>  <label for="AISRtab14">CSE1OFX</label>
-                <input id="AISRtab15" type="checkbox" name="choice5"/>  <label for="AISRtab15">CSE1ISX</label>
-                <input id="AISRtab16" type="checkbox" name="choice6"/>  <label for="AISRtab16">CSE1SPX</label>
-                <input id="AISRtab17" type="checkbox" name="choice7"/>   <label for="AISRtab17">CSE1SIX</label>
-                <input id="AISRtab18" type="checkbox" name="choice8"/>  <label for="AISRtab18">CSE1IOX</label>  
+                <input class="AISRtab" id="AISRtab11" type="checkbox" name="choice1"/>  <label for="AISRtab11">CSE1ITX</label>
+                <input class="AISRtab" id="AISRtab12" type="checkbox" name="choice2"/>  <label for="AISRtab12">CSE1PGX</label>
+                <input class="AISRtab" id="AISRtab13" type="checkbox" name="choice3"/>  <label for="AISRtab13">CSE1CFX</label>
+                <input class="AISRtab" id="AISRtab14" type="checkbox" name="choice4"/>  <label for="AISRtab14">CSE1OFX</label>
+                <input class="AISRtab" id="AISRtab15" type="checkbox" name="choice5"/>  <label for="AISRtab15">CSE1ISX</label>
+                <input class="AISRtab" id="AISRtab16" type="checkbox" name="choice6"/>  <label for="AISRtab16">CSE1SPX</label>
+                <input class="AISRtab" id="AISRtab17" type="checkbox" name="choice7"/>   <label for="AISRtab17">CSE1SIX</label>
+                <input class="AISRtab" id="AISRtab18" type="checkbox" name="choice8"/>  <label for="AISRtab18">CSE1IOX</label>  
                 <p>Year 2</p>
-                <input type="checkbox" id="AISRtab21" name="choice9"/>  <label for="AISRtab21">CSE2NFX</label>
-                <input id="AISRtab22" type="checkbox" name="choice10"/>  <label for="AISRtab22">CSE2DCX</label>
-                <input id="AISRtab23" type="checkbox" name="choice11"/>  <label for="AISRtab23">CSE2ICX</label>
-                <input id="AISRtab24" type="checkbox" name="choice12"/>  <label for="AISRtab24">CSE2CNX</label>
-                <input id="AISRtab25" type="checkbox" name="choice13"/>  <label for="AISRtab25">CSE2SDX</label>
-                <input id="AISRtab26" type="checkbox" name="choice14"/>  <label for="AISRtab26">CSE2PMX</label>
-                <input id="AISRtab27" type="checkbox" name="choice15"/>   <label for="AISRtab27">CSE2VVX</label>
-                <input id="AISRtab28" type="checkbox" name="choice16"/>  <label for="AISRtab28">CSE2DMX</label>
-                <input id="AISRtab29" type="checkbox" name="choice17"/>  <label for="AISRtab29">CSE2MAX</label>
-                <input id="AISRtab210" type="checkbox" name="choice18"/>  <label for="AISRtab210">CSE2OSX</label>
-                <input id="AISRtab211" type="checkbox" name="choice19"/>  <label for="AISRtab211">CSE2ADX</label>
-                <input id="AISRtab212" type="checkbox" name="choice20"/>  <label for="AISRtab212">CSE2CPX</label>
-                <input id="AISRtab213" type="checkbox" name="choice21"/>  <label for="AISRtab213">CSE2MLX</label>
-                <input id="AISRtab214" type="checkbox" name="choice22"/>  <label for="AISRtab214">CSE2SAX</label>
-                <input id="AISRtab215" type="checkbox" name="choice23"/>   <label for="AISRtab215">CSE2ANX</label>
-                <input id="AISRtab216" type="checkbox" name="choice24"/>  <label for="AISRtab216">CSE2WDX</label>
+                <input class="AISRtab" id="AISRtab21" type="checkbox" name="choice9"/>  <label for="AISRtab21">CSE2NFX</label>
+                <input class="AISRtab" id="AISRtab22" type="checkbox" name="choice10"/>  <label for="AISRtab22">CSE2DCX</label>
+                <input class="AISRtab" id="AISRtab23" type="checkbox" name="choice11"/>  <label for="AISRtab23">CSE2ICX</label>
+                <input class="AISRtab" id="AISRtab24" type="checkbox" name="choice12"/>  <label for="AISRtab24">CSE2CNX</label>
+                <input class="AISRtab" id="AISRtab25" type="checkbox" name="choice13"/>  <label for="AISRtab25">CSE2SDX</label>
+                <input class="AISRtab" id="AISRtab26" type="checkbox" name="choice14"/>  <label for="AISRtab26">CSE2PMX</label>
+                <input class="AISRtab" id="AISRtab27" type="checkbox" name="choice15"/>   <label for="AISRtab27">CSE2VVX</label>
+                <input class="AISRtab" id="AISRtab28" type="checkbox" name="choice16"/>  <label for="AISRtab28">CSE2DMX</label>
+                <input class="AISRtab" id="AISRtab29" type="checkbox" name="choice17"/>  <label for="AISRtab29">CSE2MAX</label>
+                <input class="AISRtab" id="AISRtab210" type="checkbox" name="choice18"/>  <label for="AISRtab210">CSE2OSX</label>
+                <input class="AISRtab" id="AISRtab211" type="checkbox" name="choice19"/>  <label for="AISRtab211">CSE2ADX</label>
+                <input class="AISRtab" id="AISRtab212" type="checkbox" name="choice20"/>  <label for="AISRtab212">CSE2CPX</label>
+                <input class="AISRtab" id="AISRtab213" type="checkbox" name="choice21"/>  <label for="AISRtab213">CSE2MLX</label>
+                <input class="AISRtab" id="AISRtab214" type="checkbox" name="choice22"/>  <label for="AISRtab214">CSE2SAX</label>
+                <input class="AISRtab" id="AISRtab215" type="checkbox" name="choice23"/>   <label for="AISRtab215">CSE2ANX</label>
+                <input class="AISRtab" id="AISRtab216" type="checkbox" name="choice24"/>  <label for="AISRtab216">CSE2WDX</label>
                 <p>Year 3</p>
-                <input type="checkbox" id="AISRtab31" name="choice25"/>  <label for="AISRtab31">CSE3BGX</label>
-                <input id="AISRtab32" type="checkbox" name="choice26"/>  <label for="AISRtab32">CSE3CIX</label>
-                <input id="AISRtab33" type="checkbox" name="choice27"/>  <label for="AISRtab33">CSE3CSX</label>
-                <input id="AISRtab34" type="checkbox" name="choice28"/>  <label for="AISRtab34">CSE3NWX</label>
-                <input id="AISRtab35" type="checkbox" name="choice29"/>  <label for="AISRtab35">CSE3OTX</label>
-                <input id="AISRtab36" type="checkbox" name="choice30"/>  <label for="AISRtab36">CSE3WSX</label>
-                <input id="AISRtab37" type="checkbox" name="choice31"/>   <label for="AISRtab37">CSE3PAX</label>
-                <input id="AISRtab38" type="checkbox" name="choice32"/>  <label for="AISRtab38">CSE3PBX</label>
-                <input id="AISRtab39" type="checkbox" name="choice33"/>  <label for="AISRtab39">CSE3PEX</label>
-                <input id="AISRtab310" type="checkbox" name="choice34"/>  <label for="AISRtab310">CSE3ACX</label>
-                <input id="AISRtab311" type="checkbox" name="choice35"/>  <label for="AISRtab311">CSE3SOX</label>
-                <input id="AISRtab312" type="checkbox" name="choice36"/>  <label for="AISRtab312">CSE3BDX</label>
-                <input id="AISRtab313" type="checkbox" name="choice37"/>  <label for="AISRtab313">CSE3PCX</label>
-                <input id="AISRtab314" type="checkbox" name="choice38"/>  <label for="AISRtab314">CSE3CAX</label>
-                <input id="AISRtab315" type="checkbox" name="choice39"/>   <label for="AISRtab315">CSE3CBX</label>
+                <input class="AISRtab" id="AISRtab31" type="checkbox" name="choice25"/>  <label for="AISRtab31">CSE3BGX</label>
+                <input class="AISRtab" id="AISRtab32" type="checkbox" name="choice26"/>  <label for="AISRtab32">CSE3CIX</label>
+                <input class="AISRtab" id="AISRtab33" type="checkbox" name="choice27"/>  <label for="AISRtab33">CSE3CSX</label>
+                <input class="AISRtab" id="AISRtab34" type="checkbox" name="choice28"/>  <label for="AISRtab34">CSE3NWX</label>
+                <input class="AISRtab" id="AISRtab35" type="checkbox" name="choice29"/>  <label for="AISRtab35">CSE3OTX</label>
+                <input class="AISRtab" id="AISRtab36" type="checkbox" name="choice30"/>  <label for="AISRtab36">CSE3WSX</label>
+                <input class="AISRtab" id="AISRtab37" type="checkbox" name="choice31"/>   <label for="AISRtab37">CSE3PAX</label>
+                <input class="AISRtab" id="AISRtab38" type="checkbox" name="choice32"/>  <label for="AISRtab38">CSE3PBX</label>
+                <input class="AISRtab" id="AISRtab39" type="checkbox" name="choice33"/>  <label for="AISRtab39">CSE3PEX</label>
+                <input class="AISRtab" id="AISRtab310" type="checkbox" name="choice34"/>  <label for="AISRtab310">CSE3ACX</label>
+                <input class="AISRtab" id="AISRtab311" type="checkbox" name="choice35"/>  <label for="AISRtab311">CSE3SOX</label>
+                <input class="AISRtab" id="AISRtab312" type="checkbox" name="choice36"/>  <label for="AISRtab312">CSE3BDX</label>
+                <input class="AISRtab" id="AISRtab313" type="checkbox" name="choice37"/>  <label for="AISRtab313">CSE3PCX</label>
+                <input class="AISRtab" id="AISRtab314" type="checkbox" name="choice38"/>  <label for="AISRtab314">CSE3CAX</label>
+                <input class="AISRtab" id="AISRtab315" type="checkbox" name="choice39"/>   <label for="AISRtab315">CSE3CBX</label>
             <br><br> 
             <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+            <script> $('input[class=AISRtab]').change(function(e){
+                if ($('input[class=AISRtab]:checked').length > 6) {
+                     $(this).prop('checked', false)
+                     alert("Allowed only up to 6 instances per Academic");
+                }
+             })
+</script>
     </form>
     </div>
  </div>
@@ -328,52 +343,59 @@
     <h2 id="FormName">Add New Academic</h2>
     <form class="scheduleform" action="" method="post">
         <p>Full Name</p>
-        <input type="text" name="UserInput" placeholder="Full Name">
+        <input type="text" name="UserInput" placeholder="Full Name" pattern="[a-zA-Z][a-zA-Z ]{2,}">
         <p>Choose Subject</p>
         <p> Year 1</p>
-            <input type="checkbox" id="ANAtab11" name="choice1"/>  <label for="ANAtab11">CSE1ITX</label>
-            <input id="ANAtab12" type="checkbox" name="choice2"/>  <label for="ANAtab12">CSE1PGX</label>
-            <input id="ANAtab13" type="checkbox" name="choice3"/>  <label for="ANAtab13">CSE1CFX</label>
-            <input id="ANAtab14" type="checkbox" name="choice4"/>  <label for="ANAtab14">CSE1OFX</label>
-            <input id="ANAtab15" type="checkbox" name="choice5"/>  <label for="ANAtab15">CSE1ISX</label>
-            <input id="ANAtab16" type="checkbox" name="choice6"/>  <label for="ANAtab16">CSE1SPX</label>
-            <input id="ANAtab17" type="checkbox" name="choice7"/>   <label for="ANAtab17">CSE1SIX</label>
-            <input id="ANAtab18" type="checkbox" name="choice8"/>  <label for="ANAtab18">CSE1IOX</label>  
+            <input class="ANAtab" id="ANAtab11" type="checkbox" name="choice1"/>  <label for="ANAtab11">CSE1ITX</label>
+            <input class="ANAtab" id="ANAtab12" type="checkbox" name="choice2"/>  <label for="ANAtab12">CSE1PGX</label>
+            <input class="ANAtab" id="ANAtab13" type="checkbox" name="choice3"/>  <label for="ANAtab13">CSE1CFX</label>
+            <input class="ANAtab" id="ANAtab14" type="checkbox" name="choice4"/>  <label for="ANAtab14">CSE1OFX</label>
+            <input class="ANAtab" id="ANAtab15" type="checkbox" name="choice5"/>  <label for="ANAtab15">CSE1ISX</label>
+            <input class="ANAtab" id="ANAtab16" type="checkbox" name="choice6"/>  <label for="ANAtab16">CSE1SPX</label>
+            <input class="ANAtab" id="ANAtab17" type="checkbox" name="choice7"/>   <label for="ANAtab17">CSE1SIX</label>
+            <input class="ANAtab" id="ANAtab18" type="checkbox" name="choice8"/>  <label for="ANAtab18">CSE1IOX</label>  
         <p>Year 2</p>
-            <input type="checkbox" id="ANAtab21" name="choice9"/>  <label for="ANAtab21">CSE2NFX</label>
-            <input id="ANAtab22" type="checkbox" name="choice10"/> <label for="ANAtab22">CSE2DCX</label>
-            <input id="ANAtab23" type="checkbox" name="choice11"/> <label for="ANAtab23">CSE2ICX</label>
-            <input id="ANAtab24" type="checkbox" name="choice12"/> <label for="ANAtab24">CSE2CNX</label>
-            <input id="ANAtab25" type="checkbox" name="choice13"/> <label for="ANAtab25">CSE2SDX</label>
-            <input id="ANAtab26" type="checkbox" name="choice14"/> <label for="ANAtab26">CSE2PMX</label>
-            <input id="ANAtab27" type="checkbox" name="choice15"/> <label for="ANAtab27">CSE2VVX</label>
-            <input id="ANAtab28" type="checkbox" name="choice16"/> <label for="ANAtab28">CSE2DMX</label>
-            <input id="ANAtab29" type="checkbox" name="choice17"/> <label for="ANAtab29">CSE2MAX</label>
-            <input id="ANAtab210" type="checkbox" name="choice18"/> <label for="ANAtab210">CSE2OSX</label>
-            <input id="ANAtab211" type="checkbox" name="choice19"/> <label for="ANAtab211">CSE2ADX</label>
-            <input id="ANAtab212" type="checkbox" name="choice20"/> <label for="ANAtab212">CSE2CPX</label>
-            <input id="ANAtab213" type="checkbox" name="choice21"/> <label for="ANAtab213">CSE2MLX</label>
-            <input id="ANAtab214" type="checkbox" name="choice22"/> <label for="ANAtab214">CSE2SAX</label>
-            <input id="ANAtab215" type="checkbox" name="choice23"/> <label for="ANAtab215">CSE2ANX</label>
-            <input id="ANAtab216" type="checkbox" name="choice24"/> <label for="ANAtab216">CSE2WDX</label>
+            <input class="ANAtab" id="ANAtab21" type="checkbox" name="choice9"/>  <label for="ANAtab21">CSE2NFX</label>
+            <input class="ANAtab" id="ANAtab22" type="checkbox" name="choice10"/> <label for="ANAtab22">CSE2DCX</label>
+            <input class="ANAtab" id="ANAtab23" type="checkbox" name="choice11"/> <label for="ANAtab23">CSE2ICX</label>
+            <input class="ANAtab" id="ANAtab24" type="checkbox" name="choice12"/> <label for="ANAtab24">CSE2CNX</label>
+            <input class="ANAtab" id="ANAtab25" type="checkbox" name="choice13"/> <label for="ANAtab25">CSE2SDX</label>
+            <input class="ANAtab" id="ANAtab26" type="checkbox" name="choice14"/> <label for="ANAtab26">CSE2PMX</label>
+            <input class="ANAtab" id="ANAtab27" type="checkbox" name="choice15"/> <label for="ANAtab27">CSE2VVX</label>
+            <input class="ANAtab" id="ANAtab28" type="checkbox" name="choice16"/> <label for="ANAtab28">CSE2DMX</label>
+            <input class="ANAtab" id="ANAtab29" type="checkbox" name="choice17"/> <label for="ANAtab29">CSE2MAX</label>
+            <input class="ANAtab" id="ANAtab210" type="checkbox" name="choice18"/> <label for="ANAtab210">CSE2OSX</label>
+            <input class="ANAtab" id="ANAtab211" type="checkbox" name="choice19"/> <label for="ANAtab211">CSE2ADX</label>
+            <input class="ANAtab" id="ANAtab212" type="checkbox" name="choice20"/> <label for="ANAtab212">CSE2CPX</label>
+            <input class="ANAtab" id="ANAtab213" type="checkbox" name="choice21"/> <label for="ANAtab213">CSE2MLX</label>
+            <input class="ANAtab" id="ANAtab214" type="checkbox" name="choice22"/> <label for="ANAtab214">CSE2SAX</label>
+            <input class="ANAtab" id="ANAtab215" type="checkbox" name="choice23"/> <label for="ANAtab215">CSE2ANX</label>
+            <input class="ANAtab" id="ANAtab216" type="checkbox" name="choice24"/> <label for="ANAtab216">CSE2WDX</label>
         <p>Year 3</p>
-            <input type="checkbox" id="ANAtab31" name="choice25"/>  <label for="ANAtab31">CSE3BGX</label>
-            <input id="ANAtab32" type="checkbox" name="choice26"/>  <label for="ANAtab32">CSE3CIX</label>
-            <input id="ANAtab33" type="checkbox" name="choice27"/>  <label for="ANAtab33">CSE3CSX</label>
-            <input id="ANAtab34" type="checkbox" name="choice28"/>  <label for="ANAtab34">CSE3NWX</label>
-            <input id="ANAtab35" type="checkbox" name="choice29"/>  <label for="ANAtab35">CSE3OTX</label>
-            <input id="ANAtab36" type="checkbox" name="choice30"/>  <label for="ANAtab36">CSE3WSX</label>
-            <input id="ANAtab37" type="checkbox" name="choice31"/>  <label for="ANAtab37">CSE3PAX</label>
-            <input id="ANAtab38" type="checkbox" name="choice32"/>  <label for="ANAtab38">CSE3PBX</label>
-            <input id="ANAtab39" type="checkbox" name="choice33"/>  <label for="ANAtab39">CSE3PEX</label>
-            <input id="ANAtab310" type="checkbox" name="choice34"/> <label for="ANAtab310">CSE3ACX</label>
-            <input id="ANAtab311" type="checkbox" name="choice35"/> <label for="ANAtab311">CSE3SOX</label>
-            <input id="ANAtab312" type="checkbox" name="choice36"/> <label for="ANAtab312">CSE3BDX</label>
-            <input id="ANAtab313" type="checkbox" name="choice37"/> <label for="ANAtab313">CSE3PCX</label>
-            <input id="ANAtab314" type="checkbox" name="choice38"/> <label for="ANAtab314">CSE3CAX</label>
-            <input id="ANAtab315" type="checkbox" name="choice39"/> <label for="ANAtab315">CSE3CBX</label>
+            <input class="ANAtab" id="ANAtab31" type="checkbox" name="choice25"/>  <label for="ANAtab31">CSE3BGX</label>
+            <input class="ANAtab" id="ANAtab32" type="checkbox" name="choice26"/>  <label for="ANAtab32">CSE3CIX</label>
+            <input class="ANAtab" id="ANAtab33" type="checkbox" name="choice27"/>  <label for="ANAtab33">CSE3CSX</label>
+            <input class="ANAtab" id="ANAtab34" type="checkbox" name="choice28"/>  <label for="ANAtab34">CSE3NWX</label>
+            <input class="ANAtab" id="ANAtab35" type="checkbox" name="choice29"/>  <label for="ANAtab35">CSE3OTX</label>
+            <input class="ANAtab" id="ANAtab36" type="checkbox" name="choice30"/>  <label for="ANAtab36">CSE3WSX</label>
+            <input class="ANAtab" id="ANAtab37" type="checkbox" name="choice31"/>  <label for="ANAtab37">CSE3PAX</label>
+            <input class="ANAtab" id="ANAtab38" type="checkbox" name="choice32"/>  <label for="ANAtab38">CSE3PBX</label>
+            <input class="ANAtab" id="ANAtab39" type="checkbox" name="choice33"/>  <label for="ANAtab39">CSE3PEX</label>
+            <input class="ANAtab" id="ANAtab310" type="checkbox" name="choice34"/> <label for="ANAtab310">CSE3ACX</label>
+            <input class="ANAtab" id="ANAtab311" type="checkbox" name="choice35"/> <label for="ANAtab311">CSE3SOX</label>
+            <input class="ANAtab" id="ANAtab312" type="checkbox" name="choice36"/> <label for="ANAtab312">CSE3BDX</label>
+            <input class="ANAtab" id="ANAtab313" type="checkbox" name="choice37"/> <label for="ANAtab313">CSE3PCX</label>
+            <input class="ANAtab" id="ANAtab314" type="checkbox" name="choice38"/> <label for="ANAtab314">CSE3CAX</label>
+            <input class="ANAtab" id="ANAtab315" type="checkbox" name="choice39"/> <label for="ANAtab315">CSE3CBX</label>
             <br><br> 
         <button type="submit" name="Submit">&nbsp;Add&nbsp;</button>
+        <script> $('input[class=ANAtab]').change(function(e){
+            if ($('input[class=ANAtab]:checked').length > 6) {
+                 $(this).prop('checked', false)
+                 alert("Allowed only up to 6 instances per Academic");
+            }
+         })
+</script>
     </form>
 </div>
  </div>  
@@ -388,52 +410,59 @@
             <option> Charlie Cox</option>
             </select>
         <p>New Name</p>
-        <input type="text" name="UserInput" placeholder="Full Name">
+        <input type="text" name="UserInput" placeholder="Full Name" pattern="[a-zA-Z][a-zA-Z ]{2,}">
         <p>Choose Subject</p>
         <p> Year 1</p>
-            <input type="checkbox" id="EAtab11" name="choice1"/>  <label for="EAtab11">CSE1ITX</label>
-            <input id="EAtab12" type="checkbox" name="choice2"/>  <label for="EAtab12">CSE1PGX</label>
-            <input id="EAtab13" type="checkbox" name="choice3"/>  <label for="EAtab13">CSE1CFX</label>
-            <input id="EAtab14" type="checkbox" name="choice4"/>  <label for="EAtab14">CSE1OFX</label>
-            <input id="EAtab15" type="checkbox" name="choice5"/>  <label for="EAtab15">CSE1ISX</label>
-            <input id="EAtab16" type="checkbox" name="choice6"/>  <label for="EAtab16">CSE1SPX</label>
-            <input id="EAtab17" type="checkbox" name="choice7"/>   <label for="EAtab17">CSE1SIX</label>
-            <input id="EAtab18" type="checkbox" name="choice8"/>  <label for="EAtab18">CSE1IOX</label>  
+            <input class="EAtab" id="EAtab11" type="checkbox" name="choice1"/>  <label for="EAtab11">CSE1ITX</label>
+            <input class="EAtab" id="EAtab12" type="checkbox" name="choice2"/>  <label for="EAtab12">CSE1PGX</label>
+            <input class="EAtab" id="EAtab13" type="checkbox" name="choice3"/>  <label for="EAtab13">CSE1CFX</label>
+            <input class="EAtab" id="EAtab14" type="checkbox" name="choice4"/>  <label for="EAtab14">CSE1OFX</label>
+            <input class="EAtab" id="EAtab15" type="checkbox" name="choice5"/>  <label for="EAtab15">CSE1ISX</label>
+            <input class="EAtab" id="EAtab16" type="checkbox" name="choice6"/>  <label for="EAtab16">CSE1SPX</label>
+            <input class="EAtab" id="EAtab17" type="checkbox" name="choice7"/>   <label for="EAtab17">CSE1SIX</label>
+            <input class="EAtab" id="EAtab18" type="checkbox" name="choice8"/>  <label for="EAtab18">CSE1IOX</label>  
         <p>Year 2</p>
-            <input type="checkbox" id="EAtab21" name="choice9"/>  <label for="EAtab21">CSE2NFX</label>
-            <input id="EAtab22" type="checkbox" name="choice10"/> <label for="EAtab22">CSE2DCX</label>
-            <input id="EAtab23" type="checkbox" name="choice11"/> <label for="EAtab23">CSE2ICX</label>
-            <input id="EAtab24" type="checkbox" name="choice12"/> <label for="EAtab24">CSE2CNX</label>
-            <input id="EAtab25" type="checkbox" name="choice13"/> <label for="EAtab25">CSE2SDX</label>
-            <input id="EAtab26" type="checkbox" name="choice14"/> <label for="EAtab26">CSE2PMX</label>
-            <input id="EAtab27" type="checkbox" name="choice15"/> <label for="EAtab27">CSE2VVX</label>
-            <input id="EAtab28" type="checkbox" name="choice16"/> <label for="EAtab28">CSE2DMX</label>
-            <input id="EAtab29" type="checkbox" name="choice17"/> <label for="EAtab29">CSE2MAX</label>
-            <input id="EAtab210" type="checkbox" name="choice18"/> <label for="EAtab210">CSE2OSX</label>
-            <input id="EAtab211" type="checkbox" name="choice19"/> <label for="EAtab211">CSE2ADX</label>
-            <input id="EAtab212" type="checkbox" name="choice20"/> <label for="EAtab212">CSE2CPX</label>
-            <input id="EAtab213" type="checkbox" name="choice21"/> <label for="EAtab213">CSE2MLX</label>
-            <input id="EAtab214" type="checkbox" name="choice22"/> <label for="EAtab214">CSE2SAX</label>
-            <input id="EAtab215" type="checkbox" name="choice23"/> <label for="EAtab215">CSE2ANX</label>
-            <input id="EAtab216" type="checkbox" name="choice24"/> <label for="EAtab216">CSE2WDX</label>
+            <input class="EAtab" id="EAtab21" type="checkbox" name="choice9"/>  <label for="EAtab21">CSE2NFX</label>
+            <input class="EAtab" id="EAtab22" type="checkbox" name="choice10"/> <label for="EAtab22">CSE2DCX</label>
+            <input class="EAtab" id="EAtab23" type="checkbox" name="choice11"/> <label for="EAtab23">CSE2ICX</label>
+            <input class="EAtab" id="EAtab24" type="checkbox" name="choice12"/> <label for="EAtab24">CSE2CNX</label>
+            <input class="EAtab" id="EAtab25" type="checkbox" name="choice13"/> <label for="EAtab25">CSE2SDX</label>
+            <input class="EAtab" id="EAtab26" type="checkbox" name="choice14"/> <label for="EAtab26">CSE2PMX</label>
+            <input class="EAtab" id="EAtab27" type="checkbox" name="choice15"/> <label for="EAtab27">CSE2VVX</label>
+            <input class="EAtab" id="EAtab28" type="checkbox" name="choice16"/> <label for="EAtab28">CSE2DMX</label>
+            <input class="EAtab" id="EAtab29" type="checkbox" name="choice17"/> <label for="EAtab29">CSE2MAX</label>
+            <input class="EAtab" id="EAtab210" type="checkbox" name="choice18"/> <label for="EAtab210">CSE2OSX</label>
+            <input class="EAtab" id="EAtab211" type="checkbox" name="choice19"/> <label for="EAtab211">CSE2ADX</label>
+            <input class="EAtab" id="EAtab212" type="checkbox" name="choice20"/> <label for="EAtab212">CSE2CPX</label>
+            <input class="EAtab" id="EAtab213" type="checkbox" name="choice21"/> <label for="EAtab213">CSE2MLX</label>
+            <input class="EAtab" id="EAtab214" type="checkbox" name="choice22"/> <label for="EAtab214">CSE2SAX</label>
+            <input class="EAtab" id="EAtab215" type="checkbox" name="choice23"/> <label for="EAtab215">CSE2ANX</label>
+            <input class="EAtab" id="EAtab216" type="checkbox" name="choice24"/> <label for="EAtab216">CSE2WDX</label>
         <p>Year 3</p>
-            <input type="checkbox" id="EAtab31" name="choice25"/>  <label for="EAtab31">CSE3BGX</label>
-            <input id="EAtab32" type="checkbox" name="choice26"/>  <label for="EAtab32">CSE3CIX</label>
-            <input id="EAtab33" type="checkbox" name="choice27"/>  <label for="EAtab33">CSE3CSX</label>
-            <input id="EAtab34" type="checkbox" name="choice28"/>  <label for="EAtab34">CSE3NWX</label>
-            <input id="EAtab35" type="checkbox" name="choice29"/>  <label for="EAtab35">CSE3OTX</label>
-            <input id="EAtab36" type="checkbox" name="choice30"/>  <label for="EAtab36">CSE3WSX</label>
-            <input id="EAtab37" type="checkbox" name="choice31"/>  <label for="EAtab37">CSE3PAX</label>
-            <input id="EAtab38" type="checkbox" name="choice32"/>  <label for="EAtab38">CSE3PBX</label>
-            <input id="EAtab39" type="checkbox" name="choice33"/>  <label for="EAtab39">CSE3PEX</label>
-            <input id="EAtab310" type="checkbox" name="choice34"/> <label for="EAtab310">CSE3ACX</label>
-            <input id="EAtab311" type="checkbox" name="choice35"/> <label for="EAtab311">CSE3SOX</label>
-            <input id="EAtab312" type="checkbox" name="choice36"/> <label for="EAtab312">CSE3BDX</label>
-            <input id="EAtab313" type="checkbox" name="choice37"/> <label for="EAtab313">CSE3PCX</label>
-            <input id="EAtab314" type="checkbox" name="choice38"/> <label for="EAtab314">CSE3CAX</label>
-            <input id="EAtab315" type="checkbox" name="choice39"/> <label for="EAtab315">CSE3CBX</label>
+            <input class="EAtab" id="EAtab31" type="checkbox" name="choice25"/>  <label for="EAtab31">CSE3BGX</label>
+            <input class="EAtab" id="EAtab32" type="checkbox" name="choice26"/>  <label for="EAtab32">CSE3CIX</label>
+            <input class="EAtab" id="EAtab33" type="checkbox" name="choice27"/>  <label for="EAtab33">CSE3CSX</label>
+            <input class="EAtab" id="EAtab34" type="checkbox" name="choice28"/>  <label for="EAtab34">CSE3NWX</label>
+            <input class="EAtab" id="EAtab35" type="checkbox" name="choice29"/>  <label for="EAtab35">CSE3OTX</label>
+            <input class="EAtab" id="EAtab36" type="checkbox" name="choice30"/>  <label for="EAtab36">CSE3WSX</label>
+            <input class="EAtab" id="EAtab37" type="checkbox" name="choice31"/>  <label for="EAtab37">CSE3PAX</label>
+            <input class="EAtab" id="EAtab38" type="checkbox" name="choice32"/>  <label for="EAtab38">CSE3PBX</label>
+            <input class="EAtab" id="EAtab39" type="checkbox" name="choice33"/>  <label for="EAtab39">CSE3PEX</label>
+            <input class="EAtab" id="EAtab310" type="checkbox" name="choice34"/> <label for="EAtab310">CSE3ACX</label>
+            <input class="EAtab" id="EAtab311" type="checkbox" name="choice35"/> <label for="EAtab311">CSE3SOX</label>
+            <input class="EAtab" id="EAtab312" type="checkbox" name="choice36"/> <label for="EAtab312">CSE3BDX</label>
+            <input class="EAtab" id="EAtab313" type="checkbox" name="choice37"/> <label for="EAtab313">CSE3PCX</label>
+            <input class="EAtab" id="EAtab314" type="checkbox" name="choice38"/> <label for="EAtab314">CSE3CAX</label>
+            <input class="EAtab" id="EAtab315" type="checkbox" name="choice39"/> <label for="EAtab315">CSE3CBX</label>
             <br><br> 
         <button type="submit" name="Submit">&nbsp;Save&nbsp;</button>
+        <script> $('input[class=EAtab]').change(function(e){
+            if ($('input[class=EAtab]:checked').length > 6) {
+                 $(this).prop('checked', false)
+                 alert("Allowed only up to 6 instances per Academic");
+            }
+         })
+</script>
     </form>
 </div>
  </div>   
